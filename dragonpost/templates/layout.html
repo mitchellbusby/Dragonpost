@@ -3,13 +3,29 @@
 <head>
     <title>{% block title %}{{ config.name }}{% endblock title %}</title>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% block meta %}{% endblock meta %}
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    {% block css %}{% endblock css %}
 
     {% block head %}{% endblock head %}
 </head>
 <body>
+    <div class="container-fluid">
+        <header>
+            <h1>{{ config.name }}</h1>
+        </header>
 
+        {% block content %}{% endblock %}
+
+        <footer></footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     {% block scripts %}{% endblock scripts %}
-}
 </body>
 </html>
