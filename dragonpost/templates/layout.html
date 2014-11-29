@@ -9,6 +9,7 @@
     {% block meta %}{% endblock meta %}
 
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
     {% block css %}{% endblock css %}
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
@@ -69,7 +70,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">{{ config.name }}</a>
+                        <a class="navbar-brand" href="#"><img src="{{ config.logo }}" alt="{{ config.name }}" class="logo"> {{ config.name }}</a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="navigation">
