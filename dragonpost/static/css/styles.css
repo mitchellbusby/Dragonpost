@@ -1,7 +1,53 @@
 
-.logo {
+/* BEGIN BOILERPLATE CODE */
+
+
+      /* BEGIN STICKY FOOTER
+      -------------------------------------------------- */
+
+      html,
+      body {
+      	height: 100%;
+      	/* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+      	min-height: 100%;
+      	height: auto !important;
+      	height: 100%;
+      	/* Negative indent footer by it's height */
+      	margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+      	height: 60px;
+      }
+      #footer {
+      	background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+      	#footer {
+      		margin-left: -20px;
+      		margin-right: -20px;
+      		padding-left: 20px;
+      		padding-right: 20px;
+      	}
+      }
+      /* END STICKY FOOTER */
+
+
+      /* END BOILERPLATE CODE */
+
+
+
+      .logo {
     /* Rescale and recentre the logo.
-       If there's a less hardcoded way to do this, I'd like to know! */
+    If there's a less hardcoded way to do this, I'd like to know! */
     height: 40px;
     margin-top: -10px;
 
