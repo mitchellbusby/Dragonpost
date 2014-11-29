@@ -1,0 +1,11 @@
+
+.logo {
+    /* Rescale and recentre the logo.
+       If there's a less hardcoded way to do this, I'd like to know! */
+    height: 40px;
+    margin-top: -10px;
+
+    /* Place it with respect to the title. */
+    float: left;
+    padding-right: 10px;
+}
