@@ -1,3 +1,5 @@
+// Main Angular JS module.
+
 (function() {
 
     // Module setup.
